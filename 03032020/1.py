@@ -1,5 +1,6 @@
 import tkinter as tk
 import random
+
 window = tk.Tk()
 H = 300
 W = 300
@@ -16,14 +17,21 @@ def close_window ():
     window.destroy()
 
 
+def main():
+	window.geometry("{}x{}".format(W, H))
+	window.resizable(0, 0)
+	window.overrideredirect(1)
 
-window.geometry("{}x{}".format(W, H))
-window.resizable(0, 0)
-window.overrideredirect(1)
+	B=tk.Button(text="Close", command=close_window, width=2, height=2)
+	B.place(x=150, y=150)
 
-B=tk.Button(text="Close", command=close_window, width=2, height=2)
-B.place(x=150, y=150)
+	B.bind("<Enter>", fun)
+	#B.bind("<Leave>", lambda e: e.widget.config(text="Close"))
+	window.mainloop()
 
-B.bind("<Enter>", fun)
-#B.bind("<Leave>", lambda e: e.widget.config(text="Close"))
-window.mainloop()
+while True:
+	try:
+		main()
+	except KeyboardInterrupt:
+		pass
+
