@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 from tkinter import * 
 from tkinter.messagebox import showinfo
+
+datapath = os.path.dirname(".")
+
+gettext.install('messages')
  
 root = Tk()
 root.title(_("Login UI using Pack"))
