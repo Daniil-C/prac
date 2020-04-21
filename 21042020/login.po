@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-21 12:49+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: 1.py:12
+msgid "Login UI using Pack"
+msgstr ""
+
+#: 1.py:17
+msgid "Login"
+msgstr ""
+
+#: 1.py:35 1.py:38 1.py:43
+msgid "Hello"
+msgstr ""
+
+#: 1.py:35
+msgid "Hello!"
+msgstr ""
+
+#: 1.py:38
+msgid "Login failed: Invalid username or password."
+msgstr ""
+
+#: 1.py:43
+msgid "The check button works."
+msgstr ""
+
+#: 1.py:49
+msgid "Username"
+msgstr ""
+
+#: 1.py:57
+msgid "Password"
+msgstr ""
+
+#: 1.py:62
+msgid "GO!"
+msgstr ""
+
+#: 1.py:70
+msgid "Remember me"
+msgstr ""
+
+#: 1.py:74
+msgid "Forgot password?"
+msgstr ""

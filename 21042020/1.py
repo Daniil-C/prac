@@ -6,7 +6,9 @@ from tkinter.messagebox import showinfo
 
 datapath = os.path.dirname(".")
 
-gettext.install('messages')
+invlogin = 0
+
+gettext.install('logon', datapath, names=("ngettext",))
  
 root = Tk()
 root.title(_("Login UI using Pack"))
@@ -25,6 +27,7 @@ Label(root, image=img_resize, bg="white", relief=SUNKEN).pack(pady=5)
  
 def checkInput():
     '''check that the username and password match'''
+    global invlogin
     usernm = "Username301"
     pswrd = "Passw0rd"
  
@@ -35,7 +38,9 @@ def checkInput():
         showinfo(_("Hello"), _("Hello!"))
         root.destroy()  
     else:
-        showinfo(_("Hello"), _("Login failed: Invalid username or password.")) 
+        invlogin += 1
+        times = ngettext("time", "times", invlogin);
+        showinfo(_("Hello"), _(f"Login failed {invlogin} {times}: Invalid username or password.")) 
  
 def toggled():
     '''display a message to the terminal every time the check button 
