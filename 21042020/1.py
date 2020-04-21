@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 from tkinter import * 
+import os
 from tkinter.messagebox import showinfo
 
 datapath = os.path.dirname(".")
